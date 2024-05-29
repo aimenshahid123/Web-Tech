@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <h1>Visited Products</h1>
+  <ul>
+    <% visitedProducts.forEach(product => { %>
+      <li>
+        <a href="/product/<%= product._id %>"><%= product.name %></a>
+        <p><%= product.description %></p>
+        <p>$<%= product.price %></p>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

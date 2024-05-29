@@ -1,0 +1,8 @@
+<form action="/menu/edit/<%= MenuItem._id %>" method="post">
+    Name: <input type="text" value="<%= MenuItem.name %>" name="name"/> <br/>
+    Description: <input type="text"  name="address" value="<%= MenuItem.description %>"/> <br/>
+    price: <input type="text"  name="price" value="<%= MenuItem.price %>"/> <br/>
+    imagePath: <input type="text"  name="imagepPath" value="<%= MenuItem.imagePath %>"/> <br/>
+    quantity: <input type="text"  name="quantity" value="<%= MenuItem.quantity %>"/> <br/>
+    <input type="submit" value="Edit" /> <br/>
+</form>

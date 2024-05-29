@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="../css/menu.css">
+
+<h1><%= pageTitle %></h1>
+
+<% console.log("Inside List.ejs File") %>
+<a href="menu/new">Add New Menu item</a>
+
+
+
+
+
+<table style="width: 100%;" border="1">
+    <thead>
+        <tr>
+           
+            <th>Name</th>
+            <th>Description</th>
+            <th>price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for( let index = 0; index < menu.length; index++ ) { %>
+            <tr>
+                <td><%= menu[index].name %></td>
+                <td><%= menu[index].description %></td>
+                <td><%= menu[index].price %></td>
+                <td><%= menu[index].quantity %></td>
+                <td>
+                        <a href="/menu/add-to-cart/<%= menu[index]._id %>">Add to Cart</a>
+                        <a href="/menu/delete/<%= menu[index]._id %>">Del</a>
+                        <a href="/menu/edit/<%= menu[index]._id %>">Edit</a>
+                </td>
+                
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+<% for( let index = 1; index <= totalPages; index++ ) { %>
+    <li><a href="/menu/<%= index %>"><%= index %></a></li>
+<% } %>

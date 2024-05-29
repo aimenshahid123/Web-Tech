@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../WEB/WEB FOLDER/MID EXAM"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "midterm"
+	}
+}

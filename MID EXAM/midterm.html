@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+
+    <header>
+        <div class="date">Wednesday, March 31, 2024</div>
+        <h1 class="logo"> THE SYDNEY MORNING HERALD</h1>
+       
+        <div class="navigation">
+            <a href="#">Log in</a>
+            <a href="#">SUBSCRIBE</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            
+            <li id="image-name-display"></li> 
+            <li><a href="sydeny.html">SYDNEY</a></li>
+            <li><a href="politics.html">POLITICS</a></li>
+            <li><a href="business.html">BUSINESS</a></li>
+            <li><a href="world.html">WORLD</a></li>
+            <li><a href="goodfood.html">GOOD FOOD</a></li>
+            <li><a href="lifestyle.html">LIFESTYLE</a></li>
+            <li><a href="culture.html">CULTURE</a></li>
+            <li><a href="sport.html">SPORT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="columns-container">
+            <section class="content-column">
+                <h1>5 people and a suspect killed in a Sydney shopping center stabbing attack, police sayn</h1>
+                <p>Five people and a suspect were killed in a Sydney shopping center stabbing attack on Saturday that left multiple people, including a small child, injured, police said.
+                    A single person began stabbing people in the mall, attacking nine people, before a police inspector shot him, Assistant Police Commissioner Anthony Cooke told reporters. Five victims died, he said.
+                   </p>
+                <img src="imagee.webp" alt="image 1" >
+                </section>
+                <section class="content-column">
+                    <h1>Woman reportedly arrested in search for Australian brothers missing in Mexico</h1>
+                    <p>Family and friends raised concerns about the welfare of Perth brothers Jake and Callum Robinson after they failed to turn up to their booked accommodation and stopped posting on social media.
+                       </p>
+                    <img src="image2.avif" alt="image2" >
+                    </section>
+                    <section class="content-column">
+                        
+                        </section>
+        </div>
+    </main>
+    <footer>
+        <p></p>  </footer>
+
+
+<script>
+            const imageNameDisplay = document.getElementById('image-name-display');
+    const images = document.querySelectorAll('img');
+    
+    images.forEach(image => {
+        image.addEventListener('mouseover', () => {
+            imageNameDisplay.textContent = image.alt; 
+            console.log("Image alt text:", image.alt); 
+        });
+    
+        image.addEventListener('mouseout', () => {
+            imageNameDisplay.textContent = ''; 
+        });
+    });
+</script> 
+</body>
+</html>

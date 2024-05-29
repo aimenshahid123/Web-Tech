@@ -1,0 +1,29 @@
+.contact-container{
+  margin-top: 5rem;
+}
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+  }
+.contact-container  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(9, 9, 9, 0.1);
+    padding: 40px;
+  }
+  .contact-container h2 {
+    color: #333;
+  }
+  .contact-container  .form-control {
+    border: 1px solid #2f77be;
+    border-radius: 5px;
+  }
+  .contact-container  .btn-primary {
+    background-color: #801a1a;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .contact-container  .btn-primary:hover {
+    background-color: #5c2626;
+  }
